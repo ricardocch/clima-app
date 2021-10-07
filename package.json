@@ -1,0 +1,23 @@
+{
+  "name": "clima-app",
+  "version": "1.0.0",
+  "description": "proyecto en equipo sobre challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardocch/clima-app.git"
+  },
+  "keywords": [
+    "clima",
+    "app"
+  ],
+  "author": "ricardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardocch/clima-app/issues"
+  },
+  "homepage": "https://github.com/ricardocch/clima-app#readme"
+}
