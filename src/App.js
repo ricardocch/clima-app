@@ -1,13 +1,15 @@
-import './App.css';
-import SideLocation from './components/SideLocation/SideLocation.jsx'
-import MainLocation from './components/MainWeather/MainWeather.jsx'
-import  Search from './components/Search/Search.jsx'
+import "./normalize.css";
+import SideLocation from "./components/SideLocation/SideLocation.jsx";
+import MainLocation from "./components/MainWeather/MainContainer/MainWeather";
+import Search from "./components/Search/Search.jsx";
+import pruebaStyle from "./app.module.css";
+
 function App() {
   return (
-    <div className="App">
-      <SideLocation/>
-      <MainLocation/>
-
+    <div className={pruebaStyle.container}>
+      <Search />
+      <SideLocation />
+      <MainLocation />
     </div>
   );
 }
