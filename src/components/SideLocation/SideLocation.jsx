@@ -1,40 +1,18 @@
 import style from './SideLocation.module.css'
-import React, {useEffect} from 'react';
+import React from 'react';
 
-function SideLocation() {
-
-  function getInfo(latitude,longitude){
-    var requestOptions = {
-      method: 'GET',
-      redirect: 'follow'
-    };
-
-    fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?lattlong=${latitude},${longitude}`,requestOptions)
-        .then(response => response.json())
-        .then(json => {
-          console.log(json)
-        });
-
-    var requestOptions = {
-      method: 'GET',
-      redirect: 'follow'
-    };
-    
-    // fetch("https://meta-weather.vercel.app/api/location/search/?lattlong=19.316736,-99.090432", requestOptions)
-    //   .then(response => response.text())
-    //   .then(result => console.log(result))
-    //   .catch(error => console.log('error', error));
-      
-  }
-
-  useEffect(()=>{
-    navigator.geolocation.getCurrentPosition((position) => {
-      getInfo(position.coords.latitude, position.coords.longitude);
-    });
-  },[])
+function SideLocation({city,temp,weatherDate,weatherState,onRequestCurrent,onSearch}) {
 
   return (
     <div >
+      <div>
+        <button onClick={onSearch}>Search for places</button> <button onClick={onRequestCurrent}>O</button>
+      </div>
+      <img src={`${process.env.PUBLIC_URL}/img/${weatherState?.replace(" ","")}.png`} alt="Estado del clima" />
+      <h2>{temp}</h2>
+      <h4>{weatherState}</h4>
+      <h5>{city}</h5>
+     <p>Today {weatherDate}</p>
     </div>
   );
 }

@@ -1,13 +1,11 @@
 import './App.css';
-import SideLocation from './components/SideLocation/SideLocation.jsx'
-import MainLocation from './components/MainWeather/MainWeather.jsx'
-import  Search from './components/Search/Search.jsx'
+import MainWeather from './components/MainWeather/MainWeather.jsx'
+
+
 function App() {
   return (
     <div className="App">
-      <SideLocation/>
-      <MainLocation/>
-
+      <MainWeather/>
     </div>
   );
 }
