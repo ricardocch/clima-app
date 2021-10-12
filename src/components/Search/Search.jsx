@@ -1,10 +1,7 @@
-import style from './Search.module.css'
+import styleSearch from "./Search.module.css";
 
 function Search() {
-  return (
-    <div >
-    </div>
-  );
+  return <div className={styleSearch.container}></div>;
 }
 
 export default Search;

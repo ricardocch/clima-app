@@ -1,0 +1,6 @@
+.nextsDayContainer {
+  margin-left: 4.375rem;
+  margin-right: 7.688rem;
+  display: flex;
+  justify-content: space-between;
+}
