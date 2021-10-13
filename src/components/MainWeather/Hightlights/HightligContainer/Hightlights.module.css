@@ -2,5 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   color: #e7e7eb;
-  justify-content: center;
+  margin-left: 4rem;
+  margin-right: 5rem;
+  justify-content: space-around;
 }

@@ -1,0 +1,20 @@
+.imgCloud1 {
+  position: absolute;
+  margin-left: -9rem;
+  margin-top: 25rem;
+}
+.imgCloud2 {
+  position: absolute;
+  margin-top: 9rem;
+  margin-left: 9rem;
+}
+.imgCloud3 {
+  position: absolute;
+  margin-left: 5rem;
+  margin-top: -9rem;
+}
+.imgCloud4 {
+  position: absolute;
+  margin-left: -14rem;
+  margin-top: -1rem;
+}

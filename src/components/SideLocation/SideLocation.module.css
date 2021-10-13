@@ -1,4 +1,80 @@
-.container {
+.sideContainer {
+  display: flex;
+  color: white;
   width: 32%;
   background: #1e213a;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.imgContainer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.imgCentral {
+  width: 12.5rem;
+  height: 14.5rem;
+}
+
+.tempContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.tempNum {
+  display: block;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 144px;
+  line-height: 169px;
+}
+.tempC {
+  display: block;
+  margin-top: 22px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 48px;
+  line-height: 56px;
+}
+.stateContainer {
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: center;
+}
+.estate {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #a09fb1;
+}
+
+.datContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 8rem 1rem 8rem;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #88869d;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.iconMarker {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-bottom: 1rem;
 }

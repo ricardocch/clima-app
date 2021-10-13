@@ -7,6 +7,7 @@
 }
 
 .unitBoxC {
+  border: none;
   display: flex;
   width: 40px;
   height: 40px;
@@ -16,7 +17,9 @@
   justify-content: center;
   color: #110e3c;
 }
+
 .unitBoxF {
+  border: none;
   display: flex;
   width: 40px;
   height: 40px;
@@ -26,6 +29,11 @@
   justify-content: center;
   color: #e7e7eb;
   margin-left: 12px;
+}
+.unitBoxF:hover,
+.unitBoxC:hover {
+  border: 2px solid #656daf;
+  box-shadow: 0px 0px 100px 21px #656daf;
 }
 
 .unitText {
