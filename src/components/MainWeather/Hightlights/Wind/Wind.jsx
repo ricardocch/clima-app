@@ -1,12 +1,12 @@
 import React from "react";
 import windStyle from "./Wind.module.css";
 
-function Wind() {
+function Wind({speed,direction}) {
   return (
     <div className={windStyle.windContainer}>
       <span className={windStyle.windTitle}>Wind status</span>
       <div className={windStyle.windVelContainer}>
-        <span className={windStyle.windNumber}>7</span>
+        <span className={windStyle.windNumber}>{speed}</span>
         <span className={windStyle.windMph}>mph</span>
       </div>
       <div className={windStyle.windDirectionContainer}>

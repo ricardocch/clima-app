@@ -17,7 +17,7 @@ function SideLocation({
       <div className={styleSide.imgContainer}>
         <Clouds />
         <img
-          src={`${process.env.PUBLIC_URL}/img/${weatherState.replace(" ","")}.png`}
+          src={`${process.env.PUBLIC_URL}/img/${weatherState?.replace(" ","")}.png`}
           alt="Estado del clima"
           className={styleSide.imgCentral}
         />

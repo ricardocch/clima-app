@@ -9,7 +9,7 @@ function MainWeather({data}) {
       <Unit />
       <NextsDays data={data} />
       <span className={styleMain.span}>Today’s Hightlights</span>
-      <Hightlights />
+      <Hightlights data={data[0]} />
     </div>
   );
 }
