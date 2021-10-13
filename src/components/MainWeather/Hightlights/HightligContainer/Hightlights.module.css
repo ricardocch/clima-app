@@ -1,0 +1,6 @@
+.hightlightsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  color: #e7e7eb;
+  justify-content: center;
+}
