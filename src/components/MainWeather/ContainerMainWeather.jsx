@@ -49,19 +49,22 @@ function ContainerMainWeather() {
   }
 
   function getInfo(latitude,longitude,showLocation){
-    if(showLocation) switchComponent()
+    
+    console.log("ej");
     fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?lattlong=${latitude},${longitude}`)
     .then(response => response.json())
     .then(json => {
       setWeather(state => ({ ...state, city: json[0].title,id:json[0].woeid }));
       getWeather(json[0].woeid)
+      // if(showLocation) switchComponent()
     })
     
   }
 
 
   function switchComponent(){
-    weather.showSearch ? setWeather({...weather,showSearch:false}) : setWeather({...weather,showSearch:true})
+    console.log("switch");
+    weather.showSearch ? setWeather(state => ({ ...state, showSearch: false })) : setWeather(state => ({ ...state, showSearch: true })) 
   }
 
   function getCords(){
