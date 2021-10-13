@@ -17,22 +17,22 @@ function SideLocation({
       <div className={styleSide.imgContainer}>
         <Clouds />
         <img
-          src="/img/Showers.png"
+          src={`${process.env.PUBLIC_URL}/img/${weatherState.replace(" ","")}.png`}
           alt="Estado del clima"
           className={styleSide.imgCentral}
         />
       </div>
       <div className={styleSide.tempContainer}>
-        <span className={styleSide.tempNum}>15</span>
+        <span className={styleSide.tempNum}>{Math.round(temp)}</span>
         <span className={styleSide.tempC}>°C</span>
       </div>
       <div className={styleSide.stateContainer}>
-        <h4 className={styleSide.estate}>Shower</h4>
+        <h4 className={styleSide.estate}>{weatherState}</h4>
       </div>
       <div className={styleSide.datContainer}>
         <span>Today</span>
         <span>•</span>
-        <span>Fri, 5 Jun</span>
+        <span>{weatherDate}</span>
       </div>
       <div className={styleSide.footerContainer}>
         <img
@@ -40,7 +40,7 @@ function SideLocation({
           alt="icon-marker"
           className={styleSide.iconMarker}
         />
-        <span>Helsinki</span>
+        <span>{city}</span>
       </div>
     </div>
   );
