@@ -15,7 +15,7 @@ function Wind({speed,direction}) {
             src="/img/arrow.svg"
             alt=""
             className={windStyle.directionArrow}
-          />
+           style={{transform:`rotate(${direction}deg)`}}/>
         </div>
         <span className={windStyle.windText}>WSW</span>
       </div>

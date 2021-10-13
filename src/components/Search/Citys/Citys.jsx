@@ -3,7 +3,7 @@ import citysStyle from "./Citys.module.css";
 
 function Citys({ cityName,onSelect,latitude,longitudde }) {
   return (
-    <div className={citysStyle.cityContainer} onClick={() =>{console.log("Select");}}>
+    <div className={citysStyle.cityContainer} onClick={() => onSelect(latitude,longitudde,true)}>
       <span className={citysStyle.cityName}>{cityName}</span>
       <img
         src="/img/arrowSearch.svg"

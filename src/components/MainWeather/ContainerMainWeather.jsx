@@ -56,7 +56,7 @@ function ContainerMainWeather() {
     .then(json => {
       setWeather(state => ({ ...state, city: json[0].title,id:json[0].woeid }));
       getWeather(json[0].woeid)
-      // if(showLocation) switchComponent()
+      if(showLocation) switchComponent()
     })
     
   }
