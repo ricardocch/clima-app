@@ -15,8 +15,8 @@ function ContainerMainWeather() {
 
  
   function convertDate(dateToConvert){
-    let arrMounths = ["January","February","March","April","May","June","July","August","September","October","November","December"]
-    let arrDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]  
+    let arrMounths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+    let arrDays = ["Sun","Mon","Tues","Wen","Thur","Fri","Sat"]  
     let d = new Date(dateToConvert.split("-")[0],dateToConvert.split("-")[1],dateToConvert.split("-")[2])
 
     return `${arrDays[d.getDay()]} ${dateToConvert.split("-")[2]} ${arrMounths[dateToConvert.split("-")[1] - 1]}`
@@ -71,9 +71,8 @@ function ContainerMainWeather() {
   return (
     <div  className={style.container} >
      { !weather.showSearch ? <SideLocation city={weather.city} temp={weather.weatherData[0]?.the_temp} weatherState={weather.weatherData[0]?.weather_state_name} weatherDate={weather.weatherData[0]?.applicable_date}  onRequestCurrent={getCords} onSearch={switchComponent}/>
-     : <Search/>}
-      {/* <SideLocation city={weather.city} temp={weather.weatherData[0]?.the_temp} weatherState={weather.weatherData[0]?.weather_state_name} weatherDate={weather.weatherData[0]?.applicable_date}  onRequestCurrent={getCords} onSearch={switchComponent}/> */}
-      <MainWeather />
+     : <Search onClose={switchComponent}/>}
+      <MainWeather data={weather.weatherData} />
     </div>
   );
 }

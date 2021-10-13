@@ -3,11 +3,11 @@ import Unit from "../UnitC°yF°/Unit";
 import NextsDays from "../NextsDays/NextDaysContainer/NextsDays";
 import Hightlights from "../Hightlights/HightligContainer/HightlightsContainer";
 
-function MainWeather() {
+function MainWeather({data}) {
   return (
     <div className={styleMain.container}>
       <Unit />
-      <NextsDays />
+      <NextsDays data={data} />
       <span className={styleMain.span}>Today’s Hightlights</span>
       <Hightlights />
     </div>
