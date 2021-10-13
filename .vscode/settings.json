@@ -4,5 +4,6 @@
     "titleBar.activeBackground": "#741173",
     "titleBar.activeForeground": "#FEFBFE"
   },
-  "cSpell.words": ["Hightlights", "Nexts"]
+  "cSpell.words": ["Hightlights", "Nexts"],
+  "cSpell.ignoreWords": ["Airpressure"]
 }

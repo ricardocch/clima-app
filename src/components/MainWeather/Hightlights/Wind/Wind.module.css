@@ -1,0 +1,85 @@
+.windContainer {
+  justify-content: center;
+  text-align: center;
+  width: 328px;
+  height: 204px;
+  background: #1e213a;
+  margin-right: 48px;
+}
+
+.windTitle {
+  display: block;
+  margin-top: 22px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.humidity {
+  width: 328px;
+  height: 204px;
+  background: #1e213a;
+}
+.visibility {
+  margin-top: 48px;
+  width: 328px;
+  height: 159px;
+  margin-right: 48px;
+  background: #1e213a;
+}
+.air {
+  margin-top: 48px;
+  width: 328px;
+  height: 159px;
+  background: #1e213a;
+}
+.windVelContainer {
+  margin-top: 6px;
+}
+
+.windNumber {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75.14px;
+}
+.windMph {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42.26px;
+}
+
+.windDirectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.windCircle {
+  display: flex;
+  width: 29.49px;
+  height: 29.49px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.directionArrow {
+  width: 18px;
+  height: 18px;
+}
+.windText {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
