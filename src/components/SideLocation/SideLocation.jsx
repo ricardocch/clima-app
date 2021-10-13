@@ -4,7 +4,7 @@ import React from 'react';
 function SideLocation({city,temp,weatherDate,weatherState,onRequestCurrent,onSearch}) {
 
   return (
-    <div >
+    <div className={style.container} >
       <div>
         <button onClick={onSearch}>Search for places</button> <button onClick={onRequestCurrent}>O</button>
       </div>

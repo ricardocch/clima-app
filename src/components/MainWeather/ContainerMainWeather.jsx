@@ -1,10 +1,11 @@
-import style from './MainWeather.module.css'
 import SideLocation from '../SideLocation/SideLocation.jsx'
 import  Search from '../Search/Search.jsx'
+import MainWeather from './MainLocation/MainWeather.jsx'
+import style from '../MainWeather/ContainerMainWeather.module.css'
 import React,{useEffect,useState } from 'react';
 
 
-function MainWeather() {
+function ContainerMainWeather() {
   const [weather,setWeather] = useState({
     city:"",
     id:0,
@@ -55,13 +56,10 @@ function MainWeather() {
   }
 
   function switchComponent(){
-    console.log("Search");
-    // showSearch = showSearch ? false : true
     weather.showSearch ? setWeather({...weather,showSearch:false}) : setWeather({...weather,showSearch:true})
   }
 
   function getCords(){
-    console.log("Hola");
     navigator.geolocation.getCurrentPosition((position) => {
       getInfo(position.coords.latitude, position.coords.longitude);
     });
@@ -71,11 +69,13 @@ function MainWeather() {
   },[])
 
   return (
-    <div >
+    <div  className={style.container} >
      { !weather.showSearch ? <SideLocation city={weather.city} temp={weather.weatherData[0]?.the_temp} weatherState={weather.weatherData[0]?.weather_state_name} weatherDate={weather.weatherData[0]?.applicable_date}  onRequestCurrent={getCords} onSearch={switchComponent}/>
      : <Search/>}
+      {/* <SideLocation city={weather.city} temp={weather.weatherData[0]?.the_temp} weatherState={weather.weatherData[0]?.weather_state_name} weatherDate={weather.weatherData[0]?.applicable_date}  onRequestCurrent={getCords} onSearch={switchComponent}/> */}
+      <MainWeather />
     </div>
   );
 }
 
-export default MainWeather;
+export default ContainerMainWeather;
