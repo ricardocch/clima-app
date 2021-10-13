@@ -1,10 +1,10 @@
 .windContainer {
   justify-content: center;
   text-align: center;
-  width: 328px;
-  height: 204px;
+  width: 20.5rem;
+  height: 12.75rem;
   background: #1e213a;
-  margin-right: 48px;
+  margin-right: 3rem;
 }
 
 .windTitle {
@@ -17,24 +17,6 @@
   line-height: 19px;
 }
 
-.humidity {
-  width: 328px;
-  height: 204px;
-  background: #1e213a;
-}
-.visibility {
-  margin-top: 48px;
-  width: 328px;
-  height: 159px;
-  margin-right: 48px;
-  background: #1e213a;
-}
-.air {
-  margin-top: 48px;
-  width: 328px;
-  height: 159px;
-  background: #1e213a;
-}
 .windVelContainer {
   margin-top: 6px;
 }

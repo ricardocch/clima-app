@@ -6,7 +6,7 @@ function DayCard() {
     <div className={styleCard.cardContainer}>
       <p className={styleCard.cardTitle}>TOMORROW</p>
       <img
-        src="./img/Shower.png"
+        src="/img/Showers.png"
         alt="img-pronostico"
         className={styleCard.img}
       />
