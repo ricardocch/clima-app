@@ -10,6 +10,7 @@ function SideLocation({
   weatherState,
   onRequestCurrent,
   onSearch,
+  unit
 }) {
   return (
     <div className={styleSide.sideContainer}>
@@ -17,14 +18,14 @@ function SideLocation({
       <div className={styleSide.imgContainer}>
         <Clouds />
         <img
-          src={`${process.env.PUBLIC_URL}/img/${weatherState.replace(" ","")}.png`}
+          src={`${process.env.PUBLIC_URL}/img/${weatherState?.replace(" ","")}.png`}
           alt="Estado del clima"
           className={styleSide.imgCentral}
         />
       </div>
       <div className={styleSide.tempContainer}>
         <span className={styleSide.tempNum}>{Math.round(temp)}</span>
-        <span className={styleSide.tempC}>°C</span>
+        <span className={styleSide.tempC}>°{unit}</span>
       </div>
       <div className={styleSide.stateContainer}>
         <h4 className={styleSide.estate}>{weatherState}</h4>

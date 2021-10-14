@@ -2,14 +2,15 @@ import React from "react";
 import styleNexts from "./NextsDays.module.css";
 import DayCard from "../DayCard/DayCard";
 
-function NextsDays() {
+function NextsDays({data,unit}) {
+
   return (
     <div className={styleNexts.nextsDayContainer}>
-      <DayCard />
-      <DayCard />
-      <DayCard />
-      <DayCard />
-      <DayCard />
+      {data.map((el,i)=>{
+        if(i===1) return <DayCard key={el.id} date="Tomorrow" stateWeather={el.weather_state_name} min={el.min_temp} max={el.max_temp} unit={unit}/>
+        if(i>1) return <DayCard key={el.id} date={el.applicable_date} stateWeather={el.weather_state_name} min={el.min_temp} max={el.max_temp} unit={unit}/>
+      })}
+      
     </div>
   );
 }
