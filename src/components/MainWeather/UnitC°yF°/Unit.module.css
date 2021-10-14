@@ -11,11 +11,9 @@
   display: flex;
   width: 40px;
   height: 40px;
-  background: #e7e7eb;
   border-radius: 54px;
   align-items: center;
   justify-content: center;
-  color: #110e3c;
 }
 
 .unitBoxF {
@@ -23,11 +21,9 @@
   display: flex;
   width: 40px;
   height: 40px;
-  background: #585676;
   border-radius: 54px;
   align-items: center;
   justify-content: center;
-  color: #e7e7eb;
   margin-left: 12px;
 }
 .unitBoxF:hover,

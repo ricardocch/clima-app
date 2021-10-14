@@ -1,7 +1,7 @@
 import React from "react";
 import styleCard from "./DayCard.module.css";
 
-function DayCard({date,stateWeather,min,max}) {
+function DayCard({date,stateWeather,min,max,unit}) {
   return (
     <div className={styleCard.cardContainer}>
       <p className={styleCard.cardTitle}>{date}</p>
@@ -11,8 +11,8 @@ function DayCard({date,stateWeather,min,max}) {
         className={styleCard.img}
       />
       <div className={styleCard.tempContainer}>
-        <span className={styleCard.tempMin}>{Math.round(min)}°C</span>
-        <span className={styleCard.tempMax}>{Math.round(max) }°C</span>
+        <span className={styleCard.tempMin}>{Math.round(min)}°{unit}</span>
+        <span className={styleCard.tempMax}>{Math.round(max) }°{unit}</span>
       </div>
     </div>
   );

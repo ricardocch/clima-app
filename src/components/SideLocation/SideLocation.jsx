@@ -10,6 +10,7 @@ function SideLocation({
   weatherState,
   onRequestCurrent,
   onSearch,
+  unit
 }) {
   return (
     <div className={styleSide.sideContainer}>
@@ -24,7 +25,7 @@ function SideLocation({
       </div>
       <div className={styleSide.tempContainer}>
         <span className={styleSide.tempNum}>{Math.round(temp)}</span>
-        <span className={styleSide.tempC}>°C</span>
+        <span className={styleSide.tempC}>°{unit}</span>
       </div>
       <div className={styleSide.stateContainer}>
         <h4 className={styleSide.estate}>{weatherState}</h4>

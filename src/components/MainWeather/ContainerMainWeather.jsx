@@ -26,6 +26,7 @@ function ContainerMainWeather() {
       "visibility": 0,
       "predictability": 0
       }],
+    unit:"C",
     showSearch:false
   })
 
@@ -37,20 +38,44 @@ function ContainerMainWeather() {
     return `${arrDays[d.getDay()]} ${dateToConvert.split("-")[2]} ${arrMounths[dateToConvert.split("-")[1] - 1]}`
   }
 
+
+
+  function switchGrades(){
+    let current = {...weather}
+    
+    current.unit = weather.unit === 'C' ?  'F' : 'C'
+
+     weather.unit === 'C' ? current.weatherData.forEach((el)=>{ el.min_temp = (el.min_temp  * 9/5) + 32
+      el.max_temp = (el.max_temp  * 9/5) + 32
+      el.the_temp = (el.the_temp  * 9/5) + 32
+    } ) : current.weatherData.forEach((el)=>{ el.min_temp = (el.min_temp  - 32) * 5/9
+      el.max_temp = (el.max_temp  - 32) * 5/9
+      el.the_temp = (el.the_temp  - 32) * 5/9
+    } ) 
+    setWeather(current);
+  }
+
   function getWeather(weatherID){
     
     fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${weatherID}`)
     .then(response => response.json())
     .then(json => {
 
-      json.consolidated_weather.forEach((el)=> el.applicable_date = convertDate(el.applicable_date))
+      json.consolidated_weather.forEach((el)=>{ 
+        el.applicable_date = convertDate(el.applicable_date)
+        if(weather.unit === 'F' ){  
+          el.min_temp = (el.min_temp  * 9/5) + 32
+          el.max_temp = (el.max_temp  * 9/5) + 32
+          el.the_temp = (el.the_temp  * 9/5) + 32
+        }
+      })
+
       setWeather(state => ({ ...state, weatherData:json.consolidated_weather }));
     })
   }
 
   function getInfo(latitude,longitude,showLocation){
     
-    console.log("ej");
     fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?lattlong=${latitude},${longitude}`)
     .then(response => response.json())
     .then(json => {
@@ -63,7 +88,6 @@ function ContainerMainWeather() {
 
 
   function switchComponent(){
-    console.log("switch");
     weather.showSearch ? setWeather(state => ({ ...state, showSearch: false })) : setWeather(state => ({ ...state, showSearch: true })) 
   }
 
@@ -78,9 +102,9 @@ function ContainerMainWeather() {
 
   return (
     <div  className={style.container} >
-     { !weather.showSearch ? <SideLocation city={weather.city} temp={weather.weatherData[0]?.the_temp} weatherState={weather.weatherData[0]?.weather_state_name} weatherDate={weather.weatherData[0]?.applicable_date}  onRequestCurrent={getCords} onSearch={switchComponent}/>
+     { !weather.showSearch ? <SideLocation city={weather.city} temp={weather.weatherData[0]?.the_temp} weatherState={weather.weatherData[0]?.weather_state_name} weatherDate={weather.weatherData[0]?.applicable_date}  onRequestCurrent={getCords} onSearch={switchComponent} unit={weather.unit}/>
      : <Search onClose={switchComponent} onSelect={getInfo}/>}
-      <MainWeather data={weather.weatherData} />
+      <MainWeather data={weather.weatherData} unit={weather.unit} unit={weather.unit} onSwitch={switchGrades}/>
     </div>
   );
 }
