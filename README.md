@@ -107,7 +107,7 @@ Ricardo Hernandez
 Wenceslao Rojas
 
 - GitHub [@WenceslaoRojas](https://github.com/WenceslaoRojas)
-- Linked In [@Wenceslao Rojas](hhttps://www.linkedin.com/in/wenceslao-rojas-a277701aa/)
+- Linked In [@Wenceslao Rojas](https://www.linkedin.com/in/wenceslao-rojas-a277701aa/)
 
 Ricardo Hernandez
 
