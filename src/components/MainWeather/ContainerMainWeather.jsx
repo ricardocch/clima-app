@@ -208,7 +208,7 @@ function ContainerMainWeather() {
     <div  className={style.container} >
      { !weather.showSearch ? <SideLocation city={weather.city} temp={weather.weatherData[0]?.the_temp} weatherState={weather.weatherData[0]?.weather_state_name} weatherDate={weather.weatherData[0]?.applicable_date}  onRequestCurrent={getCords} onSearch={switchComponent} unit={weather.unit}/>
      : <Search onClose={switchComponent} onSelect={getInfo}/>}
-      <MainWeather data={weather.weatherData} unit={weather.unit} unit={weather.unit} onSwitch={switchGrades}/>
+      <MainWeather data={weather.weatherData}  unit={weather.unit} onSwitch={switchGrades}/>
     </div>
   );
 }
