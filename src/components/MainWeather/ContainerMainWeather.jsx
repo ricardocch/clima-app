@@ -116,7 +116,7 @@ function ContainerMainWeather() {
     weatherData:[{
       "id": 0,
       "weather_state_name": "Snow",
-      "weather_state_abbr": "",
+      "weather_state_abbr": "s",
       "wind_direction_compass": "",
       "created": "",
       "applicable_date": "2021-10-13",
