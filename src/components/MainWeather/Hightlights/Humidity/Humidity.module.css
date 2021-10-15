@@ -1,0 +1,57 @@
+.humidityContainer {
+  justify-content: center;
+  text-align: center;
+  width: 20.5rem;
+  height: 12.75rem;
+  background: #1e213a;
+ margin-top: 48px;
+}
+
+.humidityTitle {
+  display: block;
+  margin-top: 22px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.humidityPorcentajeContainer {
+  margin-top: 6px;
+}
+.humidityNumber {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75.14px;
+}
+
+.porcentaje {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42.26px;
+}
+
+.div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.meter {
+  width: 69%;
+  border: none;
+  padding: 0;
+}
+
+.meter::-webkit-meter-optimum-value {
+  background: #ffec65; /* Green */
+}

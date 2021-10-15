@@ -1,0 +1,15 @@
+.nextsDayContainer {
+  margin-left: 5.6rem;
+  margin-right: 8vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width:560px) {
+  .nextsDayContainer{
+    margin-left: 16vw;
+    margin-right: 16vw;
+  }
+}
+

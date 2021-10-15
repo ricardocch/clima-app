@@ -1,0 +1,23 @@
+.container {
+  width: 68%;
+  background: #100e1d;
+  padding-bottom: 3.125rem;
+}
+
+.span {
+  display: block;
+  margin-top: 2.5rem;
+  margin-left: 5.6rem;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #e7e7eb;
+}
+
+@media (max-width:560px) {
+  .container{
+    width: 100%;
+  }
+}

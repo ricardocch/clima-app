@@ -1,0 +1,41 @@
+.cardContainer {
+  justify-content: center;
+  text-align: center;
+  width: 120px;
+  height: 177px;
+  background: #1e213a;
+  color: #e7e7eb;
+  margin-top: 1rem;
+}
+
+.cardTitle {
+  margin-top: 18px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.img {
+  margin-top: 10px;
+  margin-bottom: 31px;
+  width: 56.44px;
+  height: 62px;
+}
+
+.tempContainer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.tempMin {
+  color: #e7e7eb;
+}
+.tempMax {
+  margin-left: 16px;
+  color: #a09fb1;
+}

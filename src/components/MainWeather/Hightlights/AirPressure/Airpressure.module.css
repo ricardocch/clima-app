@@ -1,0 +1,38 @@
+.airContainer {
+  margin-top: 48px;
+  justify-content: center;
+  text-align: center;
+  width: 20.5rem;
+  height: 9.938rem;
+  background: #1e213a;
+  /* margin-left: -3.5rem; */
+}
+
+.numberContainer {
+  margin-top: 10px;
+}
+
+.title {
+  display: block;
+  margin-top: 22px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.number {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75.14px;
+}
+.mb {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42.26px;
+}
