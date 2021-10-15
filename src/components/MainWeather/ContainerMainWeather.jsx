@@ -161,7 +161,7 @@ function ContainerMainWeather() {
 
   function getWeather(weatherID){
     
-    fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${weatherID}`)
+    fetch(`https://www.metaweather.com/api/location/${weatherID}`)
     .then(response => response.json())
     .then(json => {
 
@@ -180,7 +180,7 @@ function ContainerMainWeather() {
 
   function getInfo(latitude,longitude,showLocation){
     
-    fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?lattlong=${latitude},${longitude}`)
+    fetch(`https://www.metaweather.com/api/location/search/?lattlong=${latitude},${longitude}`)
     .then(response => response.json())
     .then(json => {
       setWeather(state => ({ ...state, city: json[0].title,id:json[0].woeid }));
