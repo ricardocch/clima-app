@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Clima App Ricardo Hernández y Wenceslao Rojas}</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -30,29 +30,39 @@
   - [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
+- [Credits](#credits)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](public\OverView\ClimaApp1.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+![screenshot](public\OverView\ClimaApp2.png)
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+Application was created for practice React.js, the project has following fearures:
+
+<li>Acces to geolocation</li>
+<li>Get the weather of the current city where the user stand</li>
+<li>Search city by name and get the city weather</li>
+<li>Show max and min temperature of the next 5 days</li>
+<li>Get highlights of the city</li>
+<li>Convert °F to °C</li>
+<li>Request weather of your current location</li>
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/default.asp)
+- [Javascript](https://www.w3schools.com/js/default.asp)
+- [OpenWeather](https://www.metaweather.com/api/)
+
+
+
 
 ## Features
 
@@ -68,7 +78,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/ricardocch/clima-app
 
 # Install dependencies
 $ npm install
@@ -76,17 +86,30 @@ $ npm install
 # Run the app
 $ npm start
 ```
+## Credits
 
-## Acknowledgements
+Wenceslao Rojas
 
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
+<li>Layout</li>
+<li>Responsive web design</li>
+<li>Issue Cors</li>
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+Ricardo Hernandez
+
+<li>Application logic</li>
+<li>Intregration layout with data and logic</li>
+<li>Responsive web design</li>
+<li>API Requests</li>
+
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+Wenceslao Rojas
+
+- GitHub [@WenceslaoRojas](https://github.com/WenceslaoRojas)
+- Linked In [@Wenceslao Rojas](hhttps://www.linkedin.com/in/wenceslao-rojas-a277701aa/)
+
+Ricardo Hernandez
+
+- GitHub [@ricardocch](https://github.com/ricardocch)
+- Linked In [@Ricardo Hernandez](https://www.linkedin.com/in/ricardo-hernandez-36429a133/)
