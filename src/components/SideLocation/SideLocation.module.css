@@ -5,6 +5,7 @@
   background: #1e213a;
   justify-content: space-between;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .imgContainer {
@@ -59,7 +60,7 @@
 .datContainer {
   display: flex;
   justify-content: space-evenly;
-  padding: 1rem 8rem 1rem 8rem;
+  padding: 1rem 24%;
   font-family: Raleway;
   font-style: normal;
   font-weight: 500;
@@ -77,4 +78,10 @@
   width: 1.3rem;
   height: 1.3rem;
   margin-bottom: 1rem;
+}
+
+@media (max-width:560px) {
+  .sideContainer{
+    width: 100%;
+  }
 }
