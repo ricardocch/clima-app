@@ -16,12 +16,7 @@ function SideLocation({
     <div className={styleSide.sideContainer}>
       <Buttons onSearch={onSearch} onRequestCurrent={onRequestCurrent} />
       <div className={styleSide.imgContainer}>
-        <Clouds />
-        <img
-          src={`${process.env.PUBLIC_URL}/img/${weatherState?.replace(" ","")}.png`}
-          alt="Estado del clima"
-          className={styleSide.imgCentral}
-        />
+        <Clouds weatherState={weatherState}/>
       </div>
       <div className={styleSide.tempContainer}>
         <span className={styleSide.tempNum}>{Math.round(temp)}</span>

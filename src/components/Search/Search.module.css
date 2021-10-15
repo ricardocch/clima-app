@@ -3,7 +3,7 @@
   color: white;
   width: 32%;
   background: #1e213a;
-
+  
   flex-direction: column;
 }
 
@@ -64,3 +64,9 @@
 
   color: #e7e7eb;
 }
+ @media (max-width:560px) {
+   .searchContainer{
+     width: 100%;
+     padding-bottom: 5vh;
+   }
+ }

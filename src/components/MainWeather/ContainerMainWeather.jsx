@@ -6,12 +6,116 @@ import React,{useEffect,useState } from 'react';
 
 
 function ContainerMainWeather() {
-  const [weather,setWeather] = useState({
+  // const [weather,setWeather] = useState({
+  //   city:"",
+  //   id:0,
+  //   weatherData:[{
+  //     "id": 0,
+  //     "weather_state_name": "Snow",
+  //     "weather_state_abbr": "",
+  //     "wind_direction_compass": "",
+  //     "created": "",
+  //     "applicable_date": "2021-10-13",
+  //     "min_temp": 0,
+  //     "max_temp": 0,
+  //     "the_temp": 0,
+  //     "wind_speed": 0,
+  //     "wind_direction": 0,
+  //     "air_pressure": 0,
+  //     "humidity": 0,
+  //     "visibility": 0,
+  //     "predictability": 0
+  //     },{
+  //       "id": 0,
+  //       "weather_state_name": "Snow",
+  //       "weather_state_abbr": "",
+  //       "wind_direction_compass": "",
+  //       "created": "",
+  //       "applicable_date": "2021-10-13",
+  //       "min_temp": 0,
+  //       "max_temp": 0,
+  //       "the_temp": 0,
+  //       "wind_speed": 0,
+  //       "wind_direction": 0,
+  //       "air_pressure": 0,
+  //       "humidity": 0,
+  //       "visibility": 0,
+  //       "predictability": 0
+  //       },{
+  //         "id": 0,
+  //         "weather_state_name": "Snow",
+  //         "weather_state_abbr": "",
+  //         "wind_direction_compass": "",
+  //         "created": "",
+  //         "applicable_date": "2021-10-13",
+  //         "min_temp": 0,
+  //         "max_temp": 0,
+  //         "the_temp": 0,
+  //         "wind_speed": 0,
+  //         "wind_direction": 0,
+  //         "air_pressure": 0,
+  //         "humidity": 0,
+  //         "visibility": 0,
+  //         "predictability": 0
+  //         },{
+  //           "id": 0,
+  //           "weather_state_name": "Snow",
+  //           "weather_state_abbr": "",
+  //           "wind_direction_compass": "",
+  //           "created": "",
+  //           "applicable_date": "2021-10-13",
+  //           "min_temp": 0,
+  //           "max_temp": 0,
+  //           "the_temp": 0,
+  //           "wind_speed": 0,
+  //           "wind_direction": 0,
+  //           "air_pressure": 0,
+  //           "humidity": 0,
+  //           "visibility": 0,
+  //           "predictability": 0
+  //           },{
+  //             "id": 0,
+  //             "weather_state_name": "Snow",
+  //             "weather_state_abbr": "",
+  //             "wind_direction_compass": "",
+  //             "created": "",
+  //             "applicable_date": "2021-10-13",
+  //             "min_temp": 0,
+  //             "max_temp": 0,
+  //             "the_temp": 0,
+  //             "wind_speed": 0,
+  //             "wind_direction": 0,
+  //             "air_pressure": 0,
+  //             "humidity": 0,
+  //             "visibility": 0,
+  //             "predictability": 0
+  //             },{
+  //               "id": 0,
+  //               "weather_state_name": "Snow",
+  //               "weather_state_abbr": "",
+  //               "wind_direction_compass": "",
+  //               "created": "",
+  //               "applicable_date": "2021-10-13",
+  //               "min_temp": 0,
+  //               "max_temp": 0,
+  //               "the_temp": 0,
+  //               "wind_speed": 0,
+  //               "wind_direction": 0,
+  //               "air_pressure": 0,
+  //               "humidity": 0,
+  //               "visibility": 0,
+  //               "predictability": 0
+  //               }],
+  //   unit:"C",
+  //   showSearch:false
+  // })
+
+    const [weather,setWeather] = useState({
     city:"",
     id:0,
     weatherData:[{
       "id": 0,
-      "weather_state_name": "",
+      "weather_state_name": "Snow",
       "weather_state_abbr": "",
       "wind_direction_compass": "",
       "created": "",

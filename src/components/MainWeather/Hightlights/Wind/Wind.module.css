@@ -4,7 +4,7 @@
   width: 20.5rem;
   height: 12.75rem;
   background: #1e213a;
-  margin-right: 3rem;
+  margin-top: 48px;
 }
 
 .windTitle {
@@ -51,7 +51,6 @@
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
 }
 
 .directionArrow {
