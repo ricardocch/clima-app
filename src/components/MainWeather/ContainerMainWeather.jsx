@@ -110,7 +110,7 @@ function ContainerMainWeather() {
   //   showSearch:false
   // })
     const PROXY = window.location.hostname === "localhost"
-    ? "https://cors-anywhere.herokuapp.com"
+    ? "https://cors-anywhere.herokuapp.com/"
     : "";
     const [weather,setWeather] = useState({
     city:"",
@@ -163,7 +163,7 @@ function ContainerMainWeather() {
 
   function getWeather(weatherID){
     
-    fetch(`${PROXY}/https://www.metaweather.com/api/location/${weatherID}`)
+    fetch(`${PROXY}https://www.metaweather.com/api/location/${weatherID}`)
     .then(response => response.json())
     .then(json => {
 
