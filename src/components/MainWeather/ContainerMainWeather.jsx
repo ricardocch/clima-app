@@ -182,7 +182,7 @@ function ContainerMainWeather() {
 
   function getInfo(latitude,longitude,showLocation){
     
-    fetch(`${PROXY}/https://www.metaweather.com/api/location/search/?lattlong=${latitude},${longitude}`)
+    fetch(`${PROXY}https://www.metaweather.com/api/location/search/?lattlong=${latitude},${longitude}`)
     .then(response => response.json())
     .then(json => {
       setWeather(state => ({ ...state, city: json[0].title,id:json[0].woeid }));
