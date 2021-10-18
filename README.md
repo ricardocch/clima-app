@@ -37,9 +37,9 @@
 
 ## Overview
 
-![screenshot](public\OverView\ClimaApp1.png)
+![screenshot](https://clima-app-rh-wr.netlify.app/OverView/ClimaApp1.png)
 
-![screenshot](public\OverView\ClimaApp2.png)
+![screenshot](https://clima-app-rh-wr.netlify.app/OverView/ClimaApp2.png)
 
 Application was created for practice React.js, the project has following fearures:
 
