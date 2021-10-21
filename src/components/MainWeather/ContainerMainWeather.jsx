@@ -164,7 +164,7 @@ function ContainerMainWeather() {
   function getWeather(weatherID){
     
     fetch(`${PROXY}/api/location/${weatherID}`,{
-      'mode': 'cors',
+      'mode': 'no-cors',
       'headers': {
           'Access-Control-Allow-Origin': '*',
       }
@@ -188,7 +188,7 @@ function ContainerMainWeather() {
   function getInfo(latitude,longitude,showLocation){
     
     fetch(`${PROXY}?lattlong=${latitude},${longitude}`,{
-      'mode': 'cors',
+      'mode': 'no-cors',
       'headers': {
           'Access-Control-Allow-Origin': '*',
       }
