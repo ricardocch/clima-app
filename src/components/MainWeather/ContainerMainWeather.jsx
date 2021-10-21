@@ -187,7 +187,7 @@ function ContainerMainWeather() {
 
   function getInfo(latitude,longitude,showLocation){
     
-    fetch(`${PROXY}/?lattlong=${latitude},${longitude}`,{
+    fetch(`${PROXY}?lattlong=${latitude},${longitude}`,{
       'mode': 'cors',
       'headers': {
           'Access-Control-Allow-Origin': '*',
