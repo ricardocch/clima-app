@@ -20,6 +20,7 @@ function Search({onClose,onSelect}) {
     .then(response => console.log(response) )
     .then(json => {
       // setCities([...json]);
+      console.log(json);
      
     }).catch(err => { console.log(err); throw err ; })
       
