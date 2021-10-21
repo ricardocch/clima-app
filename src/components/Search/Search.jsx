@@ -17,12 +17,12 @@ function Search({onClose,onSelect}) {
           'Access-Control-Allow-Origin': '*',
       }
     })
-    .then(response => console.log(response.json()) )
+    .then(response => console.log(response) )
     .then(response => response.json())
     .then(json => {
       setCities([...json]);
      
-    })
+    }).catch(err => { console.log(err); throw err ; })
       
   }
   return (
