@@ -1,7 +1,7 @@
 [[redirects]]
   from = "/cors-proxy/*"
   to = "https://www.metaweather.com/api/location/search"
-  status = 200
+  status = 301
   query = {lattlong = ":lattlong"}
   force = true
   headers = {Access-Control-Allow-Origin = "*"}
