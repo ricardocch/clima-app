@@ -15,7 +15,9 @@ function Search({onClose,onSelect}) {
       'mode': 'no-cors',
       'headers': {
           'Access-Control-Allow-Origin': '*',
-      })
+      }
+    })
+    .then(response => console.log(response.json()) )
     .then(response => response.json())
     .then(json => {
       setCities([...json]);
