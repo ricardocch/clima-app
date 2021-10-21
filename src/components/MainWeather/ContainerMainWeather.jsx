@@ -110,7 +110,7 @@ function ContainerMainWeather() {
   //   showSearch:false
   // })
     const PROXY = window.location.hostname === "localhost"
-    ? "https://cors-anywhere.herokuapp.com/https://www.metaweather.com"
+    ? "https://cors-anywhere.herokuapp.com/https://www.metaweather.com/"
     : "https://www.metaweather.com/";
     const [weather,setWeather] = useState({
     city:"",

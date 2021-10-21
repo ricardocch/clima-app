@@ -4,10 +4,14 @@ import styleSearch from "./Search.module.css";
 
 function Search({onClose,onSelect}) {
   const [cities,setCities] = useState([])
+  const PROXY = window.location.hostname === "localhost"
+  ? "https://cors-anywhere.herokuapp.com/https://www.metaweather.com/"
+  : "https://www.metaweather.com/";
+
   function getInfoByCity(e){
     e.preventDefault()
     
-    fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${e.target[0].value}`)
+    fetch(`${PROXY}api/location/search/?query=${e.target[0].value}`)
     .then(response => response.json())
     .then(json => {
       setCities([...json]);
