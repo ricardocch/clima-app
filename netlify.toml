@@ -8,7 +8,7 @@
   
 [[redirects]]
 from = "/cors-data/*"
-to = "https://www.metaweather.com/:splat"
+to = "https://www.metaweather.com/api/location/:splat"
 status = 200
 force = true
 headers = {Access-Control-Allow-Origin = "*"}
