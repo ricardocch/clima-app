@@ -163,7 +163,7 @@ function ContainerMainWeather() {
 
   function getWeather(weatherID){
     
-    fetch(`${PROXY}https://www.metaweather.com//api/location/${weatherID}`)
+    fetch(`${PROXY}https://www.metaweather.com/api/location/${weatherID}`)
     .then(response => response.json())
     .then(json => {
       console.log(json);
