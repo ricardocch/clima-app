@@ -1,7 +1,8 @@
 [[redirects]]
   from = "/cors-proxy/*"
-  to = "https://www.metaweather.com/api/location/search/?lattlong=19.365888,-99.0609408"
+  to = "https://www.metaweather.com/api/location/search/"
   status = 200
+  query = {lattlong = ":lattlong"}
   force = true
   headers = {Access-Control-Allow-Origin = "*"}
 

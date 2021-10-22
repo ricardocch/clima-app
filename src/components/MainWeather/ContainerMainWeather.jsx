@@ -185,6 +185,7 @@ function ContainerMainWeather() {
     fetch(`${PROXY}?lattlong=${latitude},${longitude}`)
     .then(response => response.json())
     .then(json => {
+      console.log(json);
       setWeather(state => ({ ...state, city: json[0].title,id:json[0].woeid }));
       getWeather(json[0].woeid)
       if(showLocation) switchComponent()
