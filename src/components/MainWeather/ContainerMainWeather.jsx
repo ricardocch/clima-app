@@ -166,7 +166,7 @@ function ContainerMainWeather() {
     fetch(`${PROXY}/api/location/${weatherID}`)
     .then(response => response.json())
     .then(json => {
-
+      console.log(json);
       json.consolidated_weather.forEach((el)=>{ 
         el.applicable_date = convertDate(el.applicable_date)
         if(weather.unit === 'F' ){  
