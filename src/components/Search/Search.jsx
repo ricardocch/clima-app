@@ -11,18 +11,12 @@ function Search({onClose,onSelect}) {
   function getInfoByCity(e){
     e.preventDefault()
     
-    fetch(`${PROXY}api/location/search/?query=${e.target[0].value}`,{
-      'mode': 'no-cors',
-      'headers': {
-          'Access-Control-Allow-Origin': '*',
-      }
-    })
-    .then(response => console.log(response) )
+    fetch(`${PROXY}api/location/search/?query=${e.target[0].value}`)
+    .then(response => response.json())
     .then(json => {
-      // setCities([...json]);
-      console.log(json);
+      setCities([...json]);
      
-    }).catch(err => { console.log(err); throw err ; })
+    })
       
   }
   return (
