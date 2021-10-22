@@ -109,13 +109,9 @@ function ContainerMainWeather() {
   //   unit:"C",
   //   showSearch:false
   // })
-    const PROXYLOCATION = window.location.hostname === "localhost"
-    ? "https://cors-anywhere.herokuapp.com/https://www.metaweather.com/"
-    : "/cors-proxy/";
-
-    const PROXYDATA = window.location.hostname === "localhost"
-    ? "https://cors-anywhere.herokuapp.com/https://www.metaweather.com/"
-    : "/cors-data/";
+    const PROXY = window.location.hostname === "localhost"
+    ? "https://cors-anywhere.herokuapp.com/"
+    : "https://api.allorigins.win/raw?url=";
     const [weather,setWeather] = useState({
     city:"",
     id:0,
@@ -167,7 +163,7 @@ function ContainerMainWeather() {
 
   function getWeather(weatherID){
     
-    fetch(`${PROXYDATA}${weatherID}`)
+    fetch(`${PROXY}https://www.metaweather.com//api/location/${weatherID}`)
     .then(response => response.json())
     .then(json => {
       console.log(json);
@@ -186,10 +182,9 @@ function ContainerMainWeather() {
 
   function getInfo(latitude,longitude,showLocation){
     
-    fetch(`${PROXYLOCATION}?lattlong=${latitude},${longitude}`)
+    fetch(`${PROXY}https://www.metaweather.com/api/location/search/?lattlong=${latitude},${longitude}`)
     .then(response => response.json())
     .then(json => {
-      console.log(json);
       setWeather(state => ({ ...state, city: json[0].title,id:json[0].woeid }));
       getWeather(json[0].woeid)
       if(showLocation) switchComponent()
