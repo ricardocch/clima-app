@@ -167,7 +167,7 @@ function ContainerMainWeather() {
 
   function getWeather(weatherID){
     
-    fetch(`${PROXYDATA}api/location/${weatherID}`)
+    fetch(`${PROXYDATA}${weatherID}`)
     .then(response => response.json())
     .then(json => {
       console.log(json);
