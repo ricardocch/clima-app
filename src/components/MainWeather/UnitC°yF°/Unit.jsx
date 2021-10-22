@@ -1,12 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import unitStyle from "./Unit.module.css";
 
 function Unit({unit,onSwitch}) {
 
-
-  // function switchUnit(e){
-  //   setUnit(e.target.innerText.replace("°",""))
-  // }
 
   return (
     <div className={unitStyle.unitContainer}>
