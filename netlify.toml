@@ -5,4 +5,11 @@
   query = {lattlong = ":lattlong"}
   force = true
   headers = {Access-Control-Allow-Origin = "*"}
+  
+[[redirects]]
+from = "/cors-data/*"
+to = "https://www.metaweather.com/:splat"
+status = 200
+force = true
+headers = {Access-Control-Allow-Origin = "*"}
 
