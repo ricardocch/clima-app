@@ -111,7 +111,7 @@ function ContainerMainWeather() {
   // })
     const PROXY = window.location.hostname === "localhost"
     ? "https://cors-anywhere.herokuapp.com/"
-    : "https://api.allorigins.win/raw?url=";
+    : "https://api.allorigins.win/get?url=";
     const [weather,setWeather] = useState({
     city:"",
     id:0,
